@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
-using test.models;
+using Test.models;
 
-namespace test.Controller{
+namespace test.Controller
+{
     [ApiController]
     [Route("api/test")]
 
-    public class testController: ControllerBase
-{
+    public class testController : ControllerBase
+    {
 
 
 
@@ -19,7 +20,7 @@ namespace test.Controller{
                 {
                     name="test",
                     weight = 123,
-                    registration = "t3st"       
+                    registration = "t3st"
                 },
                    new Car()
                 {
@@ -30,6 +31,6 @@ namespace test.Controller{
             };
 
         }
-    
-}
+
+    }
 }

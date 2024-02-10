@@ -1,12 +1,13 @@
-﻿namespace test.models;
+﻿using System.ComponentModel.DataAnnotations;
 
-public class Car()
+namespace Test.models;
+
+public class Car
 {
-
-    public string? name{get; set;}
-
-    public string? registration{get; set;}
-
-    public decimal weight {get; set;}
+    [Key]
+    public string? registration { get; set; }
+    public string? name {get; set;}
+    public decimal weight {get;set;}
+   
 
 }

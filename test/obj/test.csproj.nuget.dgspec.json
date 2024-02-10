@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hassan/dotnet/test/test.csproj": {}
+    "/Users/hassan/dotnet/web-api/Test/Test.csproj": {}
   },
   "projects": {
-    "/Users/hassan/dotnet/test/test.csproj": {
+    "/Users/hassan/dotnet/web-api/Test/Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hassan/dotnet/test/test.csproj",
-        "projectName": "test",
-        "projectPath": "/Users/hassan/dotnet/test/test.csproj",
+        "projectUniqueName": "/Users/hassan/dotnet/web-api/Test/Test.csproj",
+        "projectName": "Test",
+        "projectPath": "/Users/hassan/dotnet/web-api/Test/Test.csproj",
         "packagesPath": "/Users/hassan/.nuget/packages/",
-        "outputPath": "/Users/hassan/dotnet/test/obj/",
+        "outputPath": "/Users/hassan/dotnet/web-api/Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hassan/.nuget/NuGet/NuGet.Config"
@@ -38,10 +38,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
