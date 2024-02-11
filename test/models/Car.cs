@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Test.models;
+namespace Test.models{
 
 public class Car
 {
@@ -10,4 +10,5 @@ public class Car
     public decimal weight {get;set;}
    
 
+}
 }
