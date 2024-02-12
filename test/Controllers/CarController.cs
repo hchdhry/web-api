@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Test.models;
+using Test.Data;
 
 namespace test.Controller
 {
@@ -9,26 +10,23 @@ namespace test.Controller
 
     public class testController : ControllerBase
     {
-
-
-
-        [HttpGet(Name = "GetCarDetails")]
-        public IEnumerable<Car> Get()
+        private readonly AppDBContext _DBcontext;
+        public testController(AppDBContext context)
         {
-            return new List<Car>{
-                new Car()
-                {
-                    name="test",
-                    weight = 123,
-                    registration = "t3st"
-                },
-                   new Car()
-                {
-                    name="test1",
-                    weight = 1234,
-                    registration = "t3st1"
-                }
-            };
+            _DBcontext = context;
+        }
+ 
+
+
+        [HttpPost(Name = "GetCarDetails")]
+        public IActionResult Post(string registration)
+        {
+            Car ? car = _DBcontext.cars.FirstOrDefault(u=>u.registration==registration);
+            if (car == null)
+            {
+                return NotFound();
+            }
+            return Ok(car);
 
         }
 
